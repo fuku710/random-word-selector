@@ -1,0 +1,50 @@
+.app{
+    width:50vw;
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display{
+    margin: 15px;
+}
+
+.display-word{
+    text-align: center;
+    font-size: 2em;
+    height: 1.5em;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+.display-button{
+    background:green;
+    padding: 0.3em 1em;
+    margin: 0.5em;
+    text-decoration: none;
+    color: lightgreen;
+    border: solid 2px lightgreen;
+    border-radius: 3px;
+}
+
+.regist-form{
+    margin: 15px;
+}
+
+.regist-button{
+    background:green;
+    padding: 0.3em 1em;
+    margin:0.5em;
+    text-decoration: none;
+    color: lightgreen;
+    border: solid 2px lightgreen;
+    border-radius: 3px;
+}
+
+.wordlist li{
+    color:white;
+    font-size:2em;
+}
