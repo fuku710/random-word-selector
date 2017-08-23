@@ -1,6 +1,6 @@
 import React from 'react';
-import Display from './Display.js';
-import RegistForm from './RegistForm.js';
+import Display from '../containers/Display';
+import RegistForm from '../containers/RegistForm';
 import './App.css';
 
 import { connect } from 'react-redux';
@@ -18,12 +18,12 @@ class App extends React.Component {
     }
 }
 
-function mapStateToProps(state){
+function mapStateToProps(state) {
     return {
-        isVisible:state.isVisible,
+        isVisible: state.isVisible,
         words: state.words,
-        inputWord:state.inputWord,
-        selectedWord:state.selectedWord,
+        inputWord: state.inputWord,
+        selectedWord: state.selectedWord,
     }
 }
 

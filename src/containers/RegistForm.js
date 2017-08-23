@@ -1,12 +1,12 @@
 import React from 'react';
-import WordList from './WordList.js';
-
-import {addWord,changeInputWord} from './actions';
-
 import { connect } from 'react-redux';
+import WordList from './WordList';
+import { addWord, changeInputWord } from '../actions';
+
+
 
 class RegistForm extends React.Component {
-    handleClick(){
+    handleClick() {
         const word = this.inputWord.value;
         this.props.onClick(word);
         this.inputWord.value = '';
@@ -44,9 +44,9 @@ class RegistForm extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        isVisible:state.isVisible,
+        isVisible: state.isVisible,
         words: state.words,
-        inputWord:state.inputWord,
+        inputWord: state.inputWord,
     }
 }
 
@@ -55,7 +55,7 @@ function mapDispatchToProps(dispatch) {
         onClick(word) {
             dispatch(addWord(word));
         },
-        onChange(inputValue){
+        onChange(inputValue) {
             dispatch(changeInputWord(inputValue));
         },
     }

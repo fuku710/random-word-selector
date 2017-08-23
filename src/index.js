@@ -1,21 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.js';
-
-import reducer from './reducers'
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
+import App from './components/App';
+import reducer from './reducers';
 import './index.css';
 
 
 
 const initialState = {
-    words:[],
-    selectedWord:null,
+    words: [],
+    selectedWord: null,
 }
 
-let store = createStore(reducer,initialState);
+let store = createStore(reducer, initialState);
 
 var words = [
     'word1',

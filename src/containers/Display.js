@@ -1,8 +1,6 @@
 import React from 'react';
-
 import { connect } from 'react-redux';
-
-import { setSelectedWord } from './actions';
+import { setSelectedWord } from '../actions';
 
 
 class Display extends React.Component {

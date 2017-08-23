@@ -1,9 +1,8 @@
 import React from 'react';
-
 import { connect } from 'react-redux';
 
-function WordList(props){
-    if(!props.words){
+function WordList(props) {
+    if (!props.words) {
         return null;
     }
     return (
@@ -15,9 +14,9 @@ function WordList(props){
     )
 }
 
-function mapStateToProps(state){
-    return{
-        words:state.words,
+function mapStateToProps(state) {
+    return {
+        words: state.words,
     }
 }
 
