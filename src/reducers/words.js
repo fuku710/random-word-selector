@@ -1,8 +1,4 @@
-const initialState = {
-    words: ['aaa', 'bbb', 'ccc'],
-}
-
-function words(state = initialState, action) {
+function words(state = [], action) {
     switch (action.type) {
         case 'ADD':
             return [...state, action.word];
