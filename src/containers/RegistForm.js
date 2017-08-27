@@ -20,7 +20,9 @@ class RegistForm extends React.Component {
         */
 
         return (
-            <form className='regist-form'>
+            <form className='regist-form'
+                  onSubmit={(e) => e.preventDefault()}
+            >
                 <input
                     className='regist-input'
                     type='text'
