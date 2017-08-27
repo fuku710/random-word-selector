@@ -42,8 +42,11 @@ function mapDispatchToProps(dispatch) {
 }
 
 function selectWord(words) {
+    if(words.length === 0){
+        return '';
+    }
     let rnd = Math.floor(Math.random() * words.length);
-    console.log(rnd)
+    console.log(rnd);
     return words[rnd];
 }
 
