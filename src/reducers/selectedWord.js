@@ -1,4 +1,4 @@
-function selectedWord(state = 'ここに表示', action) {
+function selectedWord(state = '', action) {
     switch (action.type) {
         case 'SET':
             return action.selectedWord;
